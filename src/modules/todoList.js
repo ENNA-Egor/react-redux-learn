@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
 import { removeTodo, toggleTodo } from "../store/actions/todos-actions";
+import {allTodos, activeTodos} from '../store/selectors/todos-selector'
 
 
 export const TodoList = () => {
-    const todos = useSelector((state) => state.todos);
+    const todos = useSelector(activeTodos);
     const dispatch = useDispatch();
   
     return (
