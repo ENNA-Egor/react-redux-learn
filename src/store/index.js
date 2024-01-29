@@ -1,4 +1,4 @@
-import {configureStore} from 'redux';
-import {rootRduser} from './redusers';
+import {createStore} from 'redux';
+import {rootReduser} from './redusers';
 
-export const store = configureStore(rootRduser, [], window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+export const store = createStore(rootReduser, [], window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
