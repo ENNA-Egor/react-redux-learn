@@ -8,7 +8,7 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello Redux Todo</h1>
+      <h1>Hello React-Redux Todo</h1>
       <NewTodo />
       <Filters />
       <TodoList />
