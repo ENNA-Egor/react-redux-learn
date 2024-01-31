@@ -7,9 +7,9 @@ const Filters =() => {
     const activeFilter = useSelector(selectActiveFilter);
     return (
         <div>
-            <button onClick={() => dispatch(setFilter('all'))} style={{color: activeFilter ==='all' ? 'red' : 'blue'}}>all</button>
-            <button onClick={() => dispatch(setFilter('active'))} style={{color: activeFilter ==='active' ? 'red' : 'blue'}}>active</button>
-            <button onClick={() => dispatch(setFilter('completed'))} style={{color: activeFilter ==='completed' ? 'red' : 'blue'}}>completed</button>
+            <button onClick={() => dispatch(setFilter('all'))} style={{color: activeFilter ==='all' ? 'red' : 'blue', backgroundColor: activeFilter ==='all' ? 'rgb(255, 255, 0)' : 'rgb(0, 255, 255)'}}>all</button>
+            <button onClick={() => dispatch(setFilter('active'))} style={{color: activeFilter ==='active' ? 'red' : 'blue', backgroundColor: activeFilter ==='active' ? 'rgb(255, 255, 0)' : 'rgb(0, 255, 255)'}}>active</button>
+            <button onClick={() => dispatch(setFilter('completed'))} style={{color: activeFilter ==='completed' ? 'red' : 'blue', backgroundColor: activeFilter ==='completed' ? 'rgb(255, 255, 0)' : 'rgb(0, 255, 255)'}}>completed</button>
         </div>
     )
 };
